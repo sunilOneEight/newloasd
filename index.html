@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mainload{
+        position: relative;
+        width:90px;
+        height: 90px;
+        margin: auto;
+        border: 4px solid white;
+        border-radius: 100%;
+        margin-bottom: 15px;
+        }
+        #holder{
+            position: absolute;
+            width:24px;
+            height:90px;
+            left:32px;
+            top: 0px;
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: load 1.5s infinite;
+        }
+        #ball{
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            background-color: rgb(27, 147, 176);
+            position:absolute;
+            top: -10px;
+            left: 5px;
+        }
+        #sball{
+            width: 16px;
+            height: 16px;
+            background-color: rgb(20, 236, 214);
+            position: absolute;
+            top: -5px;
+            left:25px;
+            border-radius: 100%;
+        }
+        #tball{
+            width: 16px;
+            height: 16px;
+            background-color: rgb(20, 239, 162);
+            border-radius: 100%;
+            top: 8px;
+            left:40px;
+            position: absolute;
+        }
+        #fball{
+            width: 16px;
+            height: 16px;
+            background-color: rgb(15, 227, 58);
+            border-radius: 100%;
+            top: 28px;
+            left:50px;
+            position: absolute;
+        }
+        #fiball{
+            width: 16px;
+            height: 16px;
+            background-color: rgb(61, 237, 13);
+            border-radius: 100%;
+            top: 50px;
+            left:50px;
+            position: absolute;
+        }
+        #last{
+            width: 16px;
+            height: 16px;
+            background-color: rgb(169, 236, 12);
+            border-radius: 100%;
+            top: 70px;
+            left:40px;
+            position: absolute;
+        }
+        @keyframes load{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        #main{
+            width: 90%px;
+            height: 100px;
+            margin: auto;
+        }
+        #span{
+            width:60px;
+            height:50px;
+            margin: auto;
+            font-size: x-large;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+    <div id="mainload">
+        <div id="holder">
+            <div id="ball">
+
+            </div>
+            <div id="sball"></div>
+            <div id="tball"></div>
+            <div id="fball"></div>
+            <div id="fiball"></div>
+            <div id="last"></div>
+        </div>
+    </div>
+    <div id="span">loading</div>
+</body>
+</html>
